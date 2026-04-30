@@ -1,0 +1,7 @@
+<svg width="1000" height="1200" viewBox="0 0 1000 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1000" height="1200" fill="#FFF4F7"/>
+<circle cx="500" cy="410" r="170" fill="#FFD0DA"/>
+<path d="M195 1000C240 750 345 640 500 640C655 640 760 750 805 1000" fill="#FFD0DA"/>
+<path d="M500 560C390 472 310 410 310 305C310 235 365 190 428 190C465 190 492 208 500 232C508 208 535 190 572 190C635 190 690 235 690 305C690 410 610 472 500 560Z" fill="#EF6D93"/>
+<text x="500" y="1090" text-anchor="middle" font-size="55" fill="#8F2F4E" font-family="Arial" font-weight="700">Добавь фото</text>
+</svg>
