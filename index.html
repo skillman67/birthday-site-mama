@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С Днём Рождения, Мамочка ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="loader-ring">
+      <span>❤️</span>
+    </div>
+    <p>Создаём красивый момент...</p>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="lux-bg">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+  </div>
+
+  <canvas id="sparkCanvas"></canvas>
+
+  <header class="hero" id="top">
+    <nav class="nav glass-panel">
+      <a href="#top" class="brand">MAMA <span>❤️</span></a>
+
+      <div class="nav-links">
+        <a href="#letter">Поздравление</a>
+        <a href="#gallery">Фото</a>
+        <a href="#thanks">Благодарность</a>
+      </div>
+
+      <button class="music-btn" id="musicBtn">♫ Музыка</button>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text reveal">
+        <p class="overline">Особенный день для самого дорогого человека</p>
+        <h1>С Днём Рождения, Мамочка!</h1>
+        <p class="typing" id="typingText"></p>
+
+        <div class="hero-buttons">
+          <a href="#letter" class="btn btn-primary">Открыть поздравление</a>
+          <button class="btn btn-soft" id="confettiBtn">Сделать красиво ✨</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="halo"></div>
+        <div class="premium-card">
+          <div class="main-photo">
+            <!-- Положи своё фото в папку img и назови mama.jpg -->
+            <img src="img\IMG_7685-_1_.jpeg" alt="Фото мамы" onerror="this.src='img/placeholder.svg'">
+          </div>
+
+          <div class="photo-caption">
+            <p>Любимая мама</p>
+            <span>Твоя улыбка делает этот день прекраснее</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#letter" class="scroll-hint">
+      <span></span>
+      смотреть дальше
+    </a>
+  </header>
+
+  <main>
+    <section class="section letter-section" id="letter">
+      <div class="section-title reveal">
+        <span>От сердца</span>
+        <h2>Самые тёплые слова для тебя</h2>
+      </div>
+
+      <article class="letter-card reveal">
+        <div class="letter-top">💌</div>
+        <p>
+          Мамочка, поздравляю тебя с Днём Рождения! В этот день хочется сказать,
+          насколько ты важна, дорога и любима. Спасибо тебе за твою доброту,
+          нежность, терпение и за любовь, которую невозможно измерить словами.
+        </p>
+        <p>
+          Я желаю тебе крепкого здоровья, внутреннего спокойствия, красивых эмоций,
+          радостных событий, исполнения желаний и много поводов улыбаться.
+          Пусть каждый новый день приносит тебе лёгкость, вдохновение и ощущение счастья.
+        </p>
+        <strong>Я тебя очень люблю ❤️</strong>
+      </article>
+    </section>
+
+    <section class="section wish-grid">
+      <div class="wish-card reveal">
+        <div class="wish-icon">🌹</div>
+        <h3>Красоты</h3>
+        <p>Пусть ты всегда чувствуешь себя прекрасной, любимой и особенной.</p>
+      </div>
+
+      <div class="wish-card reveal">
+        <div class="wish-icon">💎</div>
+        <h3>Спокойствия</h3>
+        <p>Пусть в душе будет гармония, уверенность и только светлые мысли.</p>
+      </div>
+
+      <div class="wish-card reveal">
+        <div class="wish-icon">✨</div>
+        <h3>Радости</h3>
+        <p>Пусть жизнь чаще дарит приятные сюрпризы и счастливые моменты.</p>
+      </div>
+
+      <div class="wish-card reveal">
+        <div class="wish-icon">👑</div>
+        <h3>Вдохновения</h3>
+        <p>Пусть каждый день даёт силы мечтать, улыбаться и наслаждаться жизнью.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-title reveal">
+        <span>Фото</span>
+        <h2>Красивые воспоминания</h2>
+      </div>
+
+      <div class="gallery reveal">
+        <!-- Замени фото своими: photo1.jpg, photo2.jpg, photo3.jpg, photo4.jpg, photo5.jpg -->
+        <div class="gallery-card tall">
+          <img src="img\IMG_7697-_1_.jpeg" alt="Фото 1" onerror="this.src='img/placeholder.svg'">
+          <div>Самые тёплые моменты</div>
+        </div>
+        <div class="gallery-card">
+          <img src="img\IMG_7771-_1_.jpeg" alt="Фото 2" onerror="this.src='img/placeholder.svg'">
+          <div>Улыбки</div>
+        </div>
+        <div class="gallery-card">
+          <img src="img\IMG_7595-_1_.jpeg" alt="Фото 3" onerror="this.src='img/placeholder.svg'">
+          <div>Любовь</div>
+        </div>
+        <div class="gallery-card wide">
+          <img src="img\IMG_7704.jpeg" alt="Фото 4" onerror="this.src='img/placeholder.svg'">
+          <div>Счастливые мгновения</div>
+        </div>
+        <div class="gallery-card">
+          <img src="img\IMG_7921.jpeg" alt="Фото 5" onerror="this.src='img/placeholder.svg'">
+          <div>Нежность</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section thanks-section" id="thanks">
+      <div class="section-title reveal">
+        <span>Спасибо тебе</span>
+        <h2>За что я особенно благодарен</h2>
+      </div>
+
+      <div class="thanks-list">
+        <div class="thanks-item reveal">
+          <span>01</span>
+          <div>
+            <h3>За твою любовь</h3>
+            <p>Она всегда чувствуется — в словах, поступках, взгляде и заботе.</p>
+          </div>
+        </div>
+
+        <div class="thanks-item reveal">
+          <span>02</span>
+          <div>
+            <h3>За твою силу</h3>
+            <p>Ты умеешь быть мудрой, терпеливой и доброй даже тогда, когда непросто.</p>
+          </div>
+        </div>
+
+        <div class="thanks-item reveal">
+          <span>03</span>
+          <div>
+            <h3>За твоё сердце</h3>
+            <p>В нём столько тепла, что рядом с тобой становится спокойнее и светлее.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-card reveal">
+        <p>Для тебя, мамочка</p>
+        <h2>Пусть этот день будет прекрасным</h2>
+        <button class="btn btn-primary" id="openModal">Открыть личное письмо 💌</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button id="closeModal" class="modal-close">×</button>
+      <div class="modal-icon">❤️</div>
+      <h2>Мамочка</h2>
+      <p>
+        Ты самый родной и дорогой человек. Я хочу, чтобы ты всегда улыбалась,
+        чувствовала себя счастливой, любимой и ценной. Спасибо тебе за всё:
+        за поддержку, доброту, нежность и за твоё большое сердце.
+      </p>
+      <strong>С Днём Рождения! Я тебя люблю ❤️</strong>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
